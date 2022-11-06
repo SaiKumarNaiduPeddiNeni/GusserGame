@@ -1,30 +1,28 @@
 package assignment_2;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class QuickSort {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		Random r = new Random();
+		//Random r = new Random();
 		int m;
 		int[] array;
 		System.out.println("Enter the size of the array");
 		m = scan.nextInt();
 		array = new int[m];
-		//System.out.println("Enter " + m + " elements to fill first array:");
+		System.out.println("Enter " + m + " elements to fill first array:");
 		for (int i = 0; i < m; i++) {
-			array[i] = r.nextInt(1000);
+			array[i] = scan.nextInt();
 		}
-		for(int i=0;i<m;i++) {
+		System.out.println("Elements before sort: ");
+		for(int i=0;i<array.length;i++) {
 			System.out.println(array[i]);
 		}
-
-		System.out.println("after");
 		quickSorting(array, 0, array.length-1);
-		
-		for(int i=0;i<m;i++) {
+		System.out.println("Elements after sort: ");
+		for(int i=0;i<array.length;i++) {
 			System.out.println(array[i]);
 		}
 

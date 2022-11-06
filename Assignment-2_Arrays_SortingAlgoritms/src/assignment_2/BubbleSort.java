@@ -15,7 +15,12 @@ public class BubbleSort {
 		for (int i = 0; i < m; i++) {
 			array[i] = scan.nextInt();
 		}
+		System.out.println("Elements before sort: ");
+		for(int i=0;i<array.length;i++) {
+			System.out.println(array[i]);
+		}
 		bubbleSort(array);
+		System.out.println("Elements after sort: ");
 		for(int i=0;i<array.length;i++) {
 			System.out.println(array[i]);
 		}

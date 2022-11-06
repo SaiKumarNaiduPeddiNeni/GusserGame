@@ -11,11 +11,16 @@ public class SelectionSort {
 		System.out.println("Enter the size of the array");
 		m = scan.nextInt();
 		array = new int[m];
-		System.out.println("Enter " + m + " elements to fill first array:");
+		System.out.println("Enter " + m + " elements to fill array:");
 		for (int i = 0; i < m; i++) {
 			array[i] = scan.nextInt();
 		}
+		System.out.println("Elements before sort: ");
+		for(int i=0;i<array.length;i++) {
+			System.out.println(array[i]);
+		}
 		SelectionSorting(array);
+		System.out.println("Elements after sort: ");
 		for(int i=0;i<array.length;i++) {
 			System.out.println(array[i]);
 		}
