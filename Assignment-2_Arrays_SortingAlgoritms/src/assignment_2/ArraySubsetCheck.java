@@ -28,12 +28,12 @@ public class ArraySubsetCheck {
 			if (subSet(firstArray, secondArray))
 				System.out.println("first array is subset of second array");
 			else
-				System.out.println("Not subset");
+				System.out.println("Not subset's");
 		} else {
 			if (subSet(secondArray,firstArray))
 				System.out.println("second array is subset of first array");
 			else
-				System.out.println("Not subset");
+				System.out.println("Not subset's");
 		}
 
 	scan.close();
